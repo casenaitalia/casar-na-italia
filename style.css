@@ -1,285 +1,276 @@
-/* ------------------------------
-   RESET + TIPOGRAFIA
------------------------------- */
+/* ------------------------------ */
+/* RESET E BASE */
+/* ------------------------------ */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html { scroll-behavior: smooth; }
 
 body {
-    background: #b57b77;
-    color: #f8eae7;
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+  background: #b57b77;
+  color: #f8eae7;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
 }
 
-/* ------------------------------
-   TOPO FIXO (HEADER)
------------------------------- */
+/* ------------------------------ */
+/* HEADER FIXO */
+/* ------------------------------ */
 
 #topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 14px 28px;
-    background: rgba(0,0,0,0.45);
-    backdrop-filter: blur(6px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-#topbar .left {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  padding: 14px 28px;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 #topbar img {
-    width: 34px;
-    height: 34px;
-    object-fit: contain;
+  width: 34px;
+  height: 34px;
 }
 
 #topbar .title {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.25em;
-    font-weight: 600;
-    letter-spacing: .4px;
+  font-family: "Playfair Display", serif;
+  font-size: 1.25em;
+  font-weight: 600;
 }
 
 #timer {
-    background: rgba(255,255,255,0.15);
-    padding: 6px 14px;
-    border-radius: 8px;
-    font-size: 0.9em;
-    color: #ffd89b;
-    font-weight: 600;
+  background: rgba(255,255,255,0.15);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  color: #ffd89b;
+  font-weight: 600;
 }
 
-/* ------------------------------
-   BOTÕES
------------------------------- */
+/* ------------------------------ */
+/* BOTÕES */
+/* ------------------------------ */
 
 .btn {
-    display: inline-block;
-    padding: 14px 32px;
-    background: #814d47;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: .3s;
-    font-size: 1.05em;
+  display: inline-block;
+  padding: 14px 32px;
+  background: #814d47;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1.05em;
+  transition: 0.3s;
 }
-
 .btn:hover {
-    background: #d4b28c;
-    color: #814d47;
+  background: #d7b47a;
+  color: #5e3d39;
 }
 
-/* ------------------------------
-   HERO PRINCIPAL
------------------------------- */
+/* ------------------------------ */
+/* HERO PRINCIPAL */
+/* ------------------------------ */
 
 .hero {
-    height: 65vh;
-    background: url('images/I84A9619.jpg') bottom center / cover no-repeat;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    text-align: center;
+  height: 62vh;
+  background: url("images/I84A9619.jpg") bottom center / cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
 }
 
 .hero::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.10));
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
 }
 
 .hero-content {
-    position: relative;
-    z-index: 2;
-    padding: 50px 20px;
-    max-width: 900px;
-    margin: auto;
+  position: relative;
+  z-index: 2;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.8em;
-    margin-bottom: 14px;
+  font-family: "Playfair Display", serif;
+  font-size: 2.6em;
 }
 
 .hero p {
-    font-size: 1.15em;
-    max-width: 720px;
-    margin: auto;
-    opacity: 0.95;
-    line-height: 1.7em;
+  font-size: 1.12em;
+  opacity: 0.95;
+  max-width: 750px;
+  margin: 12px auto;
 }
 
-/* ------------------------------
-   SEÇÕES GENÉRICAS
------------------------------- */
+/* ------------------------------ */
+/* SEÇÕES PADRÃO */
+/* ------------------------------ */
 
 section {
-    padding: 70px 20px;
-    max-width: 1100px;
-    margin: auto;
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 h3 {
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 2.1em;
-    margin-bottom: 15px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 2.2em;
+  margin-bottom: 15px;
 }
 
 .sub {
-    max-width: 830px;
-    margin: 10px auto 35px;
-    text-align: center;
-    font-size: 1.14em;
-    opacity: 0.93;
-    line-height: 1.8em;
+  max-width: 820px;
+  margin: 10px auto 35px;
+  text-align: center;
+  font-size: 1.14em;
+  opacity: 0.93;
 }
 
-/* ------------------------------
-   SEÇÃO DO VÍDEO
------------------------------- */
+/* ------------------------------ */
+/* VIDEO */
+/* ------------------------------ */
 
 .video-block {
-    max-width: 760px;
-    margin: 40px auto;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+  max-width: 760px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
 }
 
 .video-block iframe {
-    width: 100%;
-    height: 390px;
-    border: 0;
+  width: 100%;
+  height: 390px;
 }
 
-/* ------------------------------
-   CENAS QUE INSPIRAM
------------------------------- */
+/* ------------------------------ */
+/* GALERIA */
+/* ------------------------------ */
 
 .gallery {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding: 10px;
-    scroll-behavior: smooth;
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
 }
-
 .gallery img {
-    height: 230px;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  height: 230px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 }
 
-/* ------------------------------
-   DEPOIMENTOS
------------------------------- */
+/* ------------------------------ */
+/* TESTEMUNHOS */
+/* ------------------------------ */
 
 .testimonials-section {
-    background: url('images/I84A9497.jpg') center/cover no-repeat;
-    background-blend-mode: overlay;
-    padding: 80px 20px;
-    border-radius: 12px;
-    background-color: rgba(0,0,0,0.45);
+  background: url("images/I84A9497.jpg") center/cover no-repeat;
+  background-blend-mode: overlay;
+  background-color: rgba(0,0,0,0.45);
+  border-radius: 12px;
 }
 
 .testimonial-card {
-    min-width: 260px;
-    background: rgba(255,255,255,0.12);
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 0.95em;
-    line-height: 1.7em;
+  min-width: 260px;
+  background: rgba(255,255,255,0.12);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 0.95em;
+  line-height: 1.7em;
 }
 
-/* ------------------------------
-   QUEM É VÍVI
------------------------------- */
+/* ------------------------------ */
+/* PACOTE COMPLETO */
+/* ------------------------------ */
+
+.package-img {
+  max-width: 360px;
+  max-height: 270px;
+  border-radius: 12px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.35);
+}
+
+/* ------------------------------ */
+/* QUEM É VIVI */
+/* ------------------------------ */
 
 .vivi-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-    justify-content: center;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.vivi-photo-big,
-.vivi-photo-small {
-    border-radius: 50%;
-    overflow: hidden;
-    box-shadow: 0 0 18px rgba(0,0,0,0.35);
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
 }
 
 .vivi-photo-big {
-    width: 250px;
-    height: 250px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 18px rgba(0,0,0,0.35);
 }
 
 .vivi-photo-small {
-    width: 180px;
-    height: 180px;
-    border: 4px solid rgba(255,255,255,0.4);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid rgba(255,255,255,0.4);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
-/* ------------------------------
-   PACOTE COMPLETO
------------------------------- */
-
-.package-img {
-    max-width: 360px;
-    max-height: 270px;
-    border-radius: 12px;
-    box-shadow: 0 0 18px rgba(0,0,0,0.35);
-}
-
-/* ------------------------------
-   RODAPÉ
------------------------------- */
+/* ------------------------------ */
+/* FOOTER */
+/* ------------------------------ */
 
 footer {
-    text-align: center;
-    padding: 35px;
-    color: #f8eae7;
-    background: rgba(0,0,0,0.2);
-    margin-top: 50px;
-    font-size: 0.9em;
+  background: rgba(0,0,0,0.25);
+  padding: 40px 20px;
+  text-align: center;
+  color: #f8eae7;
 }
 
-/* ------------------------------
-   RESPONSIVIDADE
------------------------------- */
+/* ------------------------------ */
+/* MOBILE */
+/* ------------------------------ */
 
 @media (max-width: 768px) {
-    .hero {
-        height: 60vh;
-        background-position: center bottom;
-    }
-    .hero h1 {
-        font-size: 2.2em;
-    }
-    .gallery img {
-        height: 180px;
-    }
+
+  .hero {
+    height: 70vh;
+    background-position: center bottom;
+  }
+
+  .hero h1 {
+    font-size: 2.1em;
+  }
+
+  #timer {
+    font-size: 0.75em;
+  }
+
+  .package-img {
+    max-width: 280px;
+  }
+
+  .vivi-container {
+    text-align: center;
+  }
 }
