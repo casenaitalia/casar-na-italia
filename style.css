@@ -1,6 +1,6 @@
-/* ------------------------------ */
-/* RESET BÁSICO E TIPOGRAFIA */
-/* ------------------------------ */
+/* ------------------------------
+   RESET + TIPOGRAFIA
+------------------------------ */
 
 * {
     margin: 0;
@@ -8,351 +8,278 @@
     box-sizing: border-box;
 }
 
+html { scroll-behavior: smooth; }
+
 body {
-    background-color: #f7f3ee; /* bege perolado */
-    font-family: 'Playfair Display', serif;
-    color: #3a3a3a;
-    line-height: 1.5;
+    background: #b57b77;
+    color: #f8eae7;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
 }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 0.5px;
-}
+/* ------------------------------
+   TOPO FIXO (HEADER)
+------------------------------ */
 
-p {
-    font-family: 'Inter', sans-serif;
-}
-
-/* ------------------------------ */
-/* CABEÇALHO E HERO */
-/* ------------------------------ */
-
-header {
+#topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 20px 40px;
+    padding: 14px 28px;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+#topbar .left {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
-header img.logo {
-    height: 48px;
+#topbar img {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
 }
+
+#topbar .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: .4px;
+}
+
+#timer {
+    background: rgba(255,255,255,0.15);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    color: #ffd89b;
+    font-weight: 600;
+}
+
+/* ------------------------------
+   BOTÕES
+------------------------------ */
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #814d47;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: .3s;
+    font-size: 1.05em;
+}
+
+.btn:hover {
+    background: #d4b28c;
+    color: #814d47;
+}
+
+/* ------------------------------
+   HERO PRINCIPAL
+------------------------------ */
 
 .hero {
-    width: 100%;
-    min-height: 90vh;
-    background-size: cover;
-    background-position: center;
+    height: 65vh;
+    background: url('images/I84A9619.jpg') bottom center / cover no-repeat;
     position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
 }
 
 .hero::after {
-    content: "";
+    content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.25); /* escurecimento suave */
-    top: 0;
-    left: 0;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.10));
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
-    text-align: center;
-    color: #fff;
-    max-width: 800px;
-    padding: 20px;
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    margin-bottom: 14px;
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1.15em;
+    max-width: 720px;
+    margin: auto;
+    opacity: 0.95;
+    line-height: 1.7em;
 }
 
-.btn-main {
-    display: inline-block;
-    background: #7a0e0e; /* bordeaux */
-    color: white;
-    padding: 14px 30px;
-    margin-top: 25px;
-    border-radius: 8px;
-    font-weight: 600;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    letter-spacing: 0.5px;
-    transition: 0.3s;
-}
+/* ------------------------------
+   SEÇÕES GENÉRICAS
+------------------------------ */
 
-.btn-main:hover {
-    background: #5c0b0b;
-}
-
-/* ------------------------------ */
-/* VIDEO SEÇÃO */
-/* ------------------------------ */
-
-.video-section {
-    width: 100%;
-    padding: 60px 20px;
-    background: #f7f3ee;
-    text-align: center;
-}
-
-.video-section .intro-text {
-    max-width: 800px;
-    margin: 0 auto 35px auto;
-    font-size: 1.25rem;
-    color: #4b4b4b;
-}
-/* ------------------------------------- */
-/* SEÇÃO: PARA QUEM É / PARA QUEM NÃO É */
-/* ------------------------------------- */
-
-.section-who {
-    padding: 80px 20px;
-    background: #fff;
-}
-
-.section-who h2 {
-    text-align: center;
-    font-size: 2.4rem;
-    margin-bottom: 50px;
-}
-
-.who-grid {
+section {
+    padding: 70px 20px;
     max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
+    margin: auto;
 }
 
-.card-who {
-    background: #faf7f2;
-    padding: 30px;
-    border-radius: 12px;
-    border: 1px solid #e9dfd3;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-}
-
-.card-who h3 {
-    font-size: 1.4rem;
+h3 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.1em;
     margin-bottom: 15px;
-    color: #7a0e0e;
 }
 
-.card-who ul {
-    list-style: none;
-}
-
-.card-who li {
-    margin-bottom: 12px;
-    padding-left: 20px;
-    position: relative;
-}
-
-.card-who li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    color: #7a0e0e;
-    font-weight: bold;
-}
-
-/* ------------------------------ */
-/* SEÇÃO DE PROVA SOCIAL */
-/* ------------------------------ */
-
-.section-testimonials {
-    padding: 80px 20px;
-    background: #f7f3ee;
-}
-
-.section-testimonials h2 {
+.sub {
+    max-width: 830px;
+    margin: 10px auto 35px;
     text-align: center;
-    font-size: 2.4rem;
-    margin-bottom: 50px;
+    font-size: 1.14em;
+    opacity: 0.93;
+    line-height: 1.8em;
 }
 
-.testimonial-grid {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-    gap: 35px;
+/* ------------------------------
+   SEÇÃO DO VÍDEO
+------------------------------ */
+
+.video-block {
+    max-width: 760px;
+    margin: 40px auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+.video-block iframe {
+    width: 100%;
+    height: 390px;
+    border: 0;
+}
+
+/* ------------------------------
+   CENAS QUE INSPIRAM
+------------------------------ */
+
+.gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.gallery img {
+    height: 230px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* ------------------------------
+   DEPOIMENTOS
+------------------------------ */
+
+.testimonials-section {
+    background: url('images/I84A9497.jpg') center/cover no-repeat;
+    background-blend-mode: overlay;
+    padding: 80px 20px;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.45);
 }
 
 .testimonial-card {
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #eadfce;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
-}
-
-.testimonial-card p {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-.testimonial-author {
-    font-weight: 600;
-    font-size: 0.95rem;
-    color: #7a0e0e;
-}
-/* ------------------------------------- */
-/* SEÇÃO: O QUE VOCÊ VAI ENCONTRAR */
-/* ------------------------------------- */
-
-.section-content {
-    position: relative;
-    padding: 90px 20px;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.section-content::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.35); /* fade elegante */
-    z-index: 1;
-}
-
-.section-content .inner {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-    color: #fff;
-}
-
-.section-content h2 {
-    font-size: 2.6rem;
-    margin-bottom: 25px;
-    font-family: "Playfair Display", serif;
-    font-weight: 600;
-}
-
-.section-content p {
-    font-size: 1.2rem;
-    line-height: 1.7;
-    font-family: "Inter", sans-serif;
-    margin-bottom: 30px;
-}
-
-.section-content .check-list {
-    text-align: left;
-    margin-top: 30px;
-}
-
-.section-content .check-list li {
-    margin-bottom: 12px;
-    padding-left: 22px;
-    position: relative;
-}
-
-.section-content .check-list li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-    color: #f6d7a6;
-}
-
-
-
-/* ------------------------------------- */
-/* SEÇÃO: LINHA DO TEMPO (A JORNADA) */
-/* ------------------------------------- */
-
-.timeline {
-    padding: 100px 20px;
-    background: #faf7f2; /* bege perolado */
-}
-
-.timeline h2 {
-    text-align: center;
-    font-size: 2.6rem;
-    margin-bottom: 60px;
-    font-family: "Playfair Display", serif;
-}
-
-.timeline-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 40px;
-}
-
-.timeline-card {
-    background: #fff;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #ebdfd0;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.timeline-card img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-    filter: brightness(0.92);
-}
-
-.timeline-card h3 {
+    min-width: 260px;
+    background: rgba(255,255,255,0.12);
     padding: 20px;
-    font-size: 1.4rem;
-    color: #7a0e0e;
+    border-radius: 10px;
+    font-size: 0.95em;
+    line-height: 1.7em;
 }
 
-.timeline-card p {
-    padding: 0 20px 25px 20px;
-    font-family: "Inter", sans-serif;
-    font-size: 1rem;
-    line-height: 1.6;
+/* ------------------------------
+   QUEM É VÍVI
+------------------------------ */
+
+.vivi-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
 }
 
+.vivi-photo-big,
+.vivi-photo-small {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 18px rgba(0,0,0,0.35);
+}
 
-/* ------------------------------------- */
-/* FOOTER ELEGANTE */
-/* ------------------------------------- */
+.vivi-photo-big {
+    width: 250px;
+    height: 250px;
+}
+
+.vivi-photo-small {
+    width: 180px;
+    height: 180px;
+    border: 4px solid rgba(255,255,255,0.4);
+}
+
+/* ------------------------------
+   PACOTE COMPLETO
+------------------------------ */
+
+.package-img {
+    max-width: 360px;
+    max-height: 270px;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.35);
+}
+
+/* ------------------------------
+   RODAPÉ
+------------------------------ */
 
 footer {
-    background: #3b1f1f;
-    padding: 40px 20px;
     text-align: center;
-    color: #f5e9df;
-    font-family: "Inter", sans-serif;
-    margin-top: 90px;
+    padding: 35px;
+    color: #f8eae7;
+    background: rgba(0,0,0,0.2);
+    margin-top: 50px;
+    font-size: 0.9em;
 }
 
-footer p {
-    margin: 5px 0;
-    font-size: 0.95rem;
-}
+/* ------------------------------
+   RESPONSIVIDADE
+------------------------------ */
 
-footer a {
-    color: #f6d7a6;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-footer a:hover {
-    text-decoration: underline;
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        background-position: center bottom;
+    }
+    .hero h1 {
+        font-size: 2.2em;
+    }
+    .gallery img {
+        height: 180px;
+    }
 }
