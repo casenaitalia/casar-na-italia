@@ -1,379 +1,315 @@
-/* ---------------------------------------------------- */
-/* RESET */
-/* ---------------------------------------------------- */
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casar na Itália — Guia de Vívi Temperine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<body>
 
-html { scroll-behavior: smooth; }
+<!-- HEADER FIXO -->
+<header id="topbar">
+  <div class="left">
+    <img src="images/favicon.png" alt="Logo Casar na Itália">
+    <div class="title">Casar na Itália</div>
+  </div>
+  <div id="timer">Oferta expira em: 05:19:44</div>
+</header>
 
-body {
-  background: #b57b77;
-  color: #f8eae7;
-  font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-}
+<div class="spacer-top"></div>
 
-/* ---------------------------------------------------- */
-/* CORES EDITORIAIS */
-/* ---------------------------------------------------- */
+<!-- HERO PRINCIPAL -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Casar na Itália</h1>
+    <p class="hero-sub">O guia para transformar o seu sonho italiano em um “sim” real e possível.</p>
+    <p class="hero-sub2">Descubra o passo a passo de quem viveu essa experiência — e transforme o impossível em um “sim” memorável.</p>
+    <a href="https://chk.eduzz.com/7WXQ2NG49A" class="btn">Quero começar meu sonho</a>
+  </div>
+</section>
 
-:root {
-  --gold: #FFD7A3;
-  --brown: #814d47;
-  --brown-light: #b57b77;
-  --white-soft: #f8eae7;
-}
+<!-- INTRO SENTIR -->
+<section class="section-feel">
+  <h3>Você vai sentir…</h3>
+  <p class="sub">
+    Uma jornada emocional e prática que transforma o caos do planejamento em clareza, confiança e magia.
+  </p>
 
-/* ---------------------------------------------------- */
-/* HEADER */
-/* ---------------------------------------------------- */
+  <div class="feel-grid">
+    <div class="ps-item">✨ Clareza sobre por onde começar, mesmo que tudo pareça confuso.</div>
+    <div class="ps-item">✨ Alívio ao perceber que casar na Itália é possível — de verdade.</div>
+    <div class="ps-item">✨ Encantamento ao visualizar seu dia em terras italianas.</div>
+    <div class="ps-item">✨ Segurança ao entender documentos, prazos e exigências.</div>
+    <div class="ps-item">✨ Inspiração com histórias reais, caminhos testados e dicas práticas.</div>
+  </div>
+</section>
 
-#topbar {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  padding: 14px 28px;
-  background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(6px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 999;
-}
+<!-- VÍDEO -->
+<section class="video-section">
+  <h3>Cenas reais. Emoções reais</h3>
 
-#topbar img {
-  width: 34px;
-  height: 34px;
-}
+  <p class="sub video-intro">
+    Talvez você esteja sonhando em casar na Itália, mas sem saber por onde começar.<br>
+    Eu já senti isso também. Já estive exatamente onde você está agora — sonhando, planejando, duvidando.<br>
+    O que mudou minha vida foi descobrir que, com clareza e direção, o impossível se torna real.<br>
+    E agora eu quero que você viva o seu “sim” italiano com a mesma leveza que vivi o meu.
+  </p>
 
-#topbar .title {
-  font-family: "Playfair Display", serif;
-  font-size: 1.25em;
-  font-weight: 600;
-}
+  <div class="video-block">
+    <iframe src="https://www.youtube.com/embed/UVlCHu1g1xE?si=w5Cb01GcrRNkoZ16" allowfullscreen></iframe>
+  </div>
+</section>
 
-#timer {
-  background: rgba(255,255,255,0.15);
-  padding: 6px 14px;
-  border-radius: 6px;
-  font-size: 0.9em;
-  color: var(--gold);
-  font-weight: 600;
-}
+<!-- O QUE VOCÊ VAI ENCONTRAR -->
+<section class="content-section" style="background-image:url('images/I84A9497.jpg');">
+  <div class="content-inner">
+    <h3>O que você vai encontrar</h3>
+    <p class="sub">
+      Um guia completo, prático e sensível — criado para transformar dúvidas em clareza e sonhos em direção.
+    </p>
 
-.spacer-top { height: 75px; }
+    <ul class="check-list">
+      <li>✔ Roteiro completo e atualizado do início ao fim</li>
+      <li>✔ Orientações de documentos, prazos e exigências</li>
+      <li>✔ Checklist editorial sofisticado</li>
+      <li>✔ Recomendações reais de cidades e experiências</li>
+      <li>✔ Estratégias para economizar sem perder a magia</li>
+    </ul>
+  </div>
+</section>
 
-/* ---------------------------------------------------- */
-/* BOTÕES */
-/* ---------------------------------------------------- */
+<!-- BÔNUS ESPECIAIS -->
+<section class="bonus-section">
+  <h3>Bônus especiais para elevar sua experiência</h3>
+  <p class="sub bonus-intro">
+    Você leva muito mais do que um guia — leva suporte, direção e inspirações que transformam seu sonho italiano em clareza prática.
+  </p>
 
-.btn {
-  display: inline-block;
-  padding: 14px 32px;
-  background: var(--brown);
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.08em;
-  transition: 0.25s;
-}
+  <div class="bonus-grid">
 
-.btn:hover {
-  background: var(--gold);
-  color: #5e3d39;
-}
+    <div class="bonus-item">
+      <h4>📦 BÔNUS 1 — Checklist Editorial Premium</h4>
+      <p>Checklist completo, elegante e pronto para imprimir — sem estresse.</p>
+    </div>
 
-/* ---------------------------------------------------- */
-/* HERO */
-/* ---------------------------------------------------- */
+    <div class="bonus-item">
+      <h4>🎵 BÔNUS 2 — Playlist Oficial “Casar na Itália”</h4>
+      <p>Música italiana, romance e cinema — para inspirar seu planejamento.</p>
+    </div>
 
-.hero {
-  height: 70vh;
-  background: url("images/I84A9619.jpg") center center / cover no-repeat;
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-  text-align: center;
-}
+    <div class="bonus-item">
+      <h4>💰 BÔNUS 3 — Mini Guia de Economias Inteligentes</h4>
+      <p>Dicas reais para economizar sem perder charme e propósito.</p>
+    </div>
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.35);
-}
+    <div class="bonus-item">
+      <h4>📍 BÔNUS 4 — Lista de Cidades Cinematográficas</h4>
+      <p>As melhores cidades italianas para casar — com estilo e atmosfera.</p>
+    </div>
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  padding-bottom: 45px;
-}
+    <div class="bonus-item">
+      <h4>✨ BÔNUS 5 — Inspirações Reais</h4>
+      <p>Curadoria estética com vestidos, flores, capelas e atmosferas.</p>
+    </div>
 
-.hero h1 {
-  color: var(--gold);
-  font-family: "Playfair Display", serif;
-  font-size: 3em;
-  margin-bottom: 10px;
-}
+    <div class="bonus-item email-bonus">
+      ✔ <strong>Modelos de e-mail em Português, Inglês e Italiano</strong>  
+      Textos profissionais para falar com fornecedores com segurança.
+    </div>
 
-.hero-sub, .hero-sub2 {
-  max-width: 820px;
-  margin: 0 auto 10px;
-  font-size: 1.16em;
-}
+  </div>
 
-/* ---------------------------------------------------- */
-/* SEÇÕES */
-/* ---------------------------------------------------- */
+  <p class="bonus-foot">Todos os bônus são incluídos gratuitamente — parte do seu guia definitivo.</p>
+</section>
 
-section {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
+<!-- LINHA DO TEMPO -->
+<section class="timeline">
+  <h3>A jornada até dizer “sim” na Itália</h3>
+  <p class="sub">Uma linha do tempo real e emocional — da escolha do destino aos últimos detalhes.</p>
 
-h3 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.3em;
-  text-align: center;
-  margin-bottom: 10px;
-  color: var(--gold);
-}
+  <div class="timeline-grid">
 
-.sub {
-  text-align: center;
-  max-width: 820px;
-  margin: 0 auto 35px;
-  opacity: 0.95;
-  font-size: 1.12em;
-}
+    <div class="timeline-card">
+      <img src="images/IMG_20180609_230441078_BURST000_COVER_TOP.jpg">
+      <h4>O primeiro passo</h4>
+      <p>A ideia nasce — e o coração pulsa imaginando o “sim” italiano.</p>
+    </div>
 
-/* ---------------------------------------------------- */
-/* FEEL GRID */
-/* ---------------------------------------------------- */
+    <div class="timeline-card">
+      <img src="images/IMG_5519.jpg">
+      <h4>Escolhas e caminhos</h4>
+      <p>Capelas, cidades, estilo — e o início da organização emocional e prática.</p>
+    </div>
 
-.feel-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
+    <div class="timeline-card">
+      <img src="images/IMG_20180605_181812292_HDR.jpg">
+      <h4>A chegada na Itália</h4>
+      <p>A emoção de pisar em solo italiano e sentir o sonho ganhar forma.</p>
+    </div>
 
-.ps-item {
-  background: rgba(255,255,255,0.12);
-  padding: 18px;
-  border-radius: 8px;
-  font-size: 1.05em;
-}
+    <div class="timeline-card">
+      <img src="images/I84A8942.jpg">
+      <h4>O dia perfeito</h4>
+      <p>Flores, luz, vinhedo — e um “sim” que ecoa pela vida inteira.</p>
+    </div>
 
-/* ---------------------------------------------------- */
-/* VÍDEO */
-/* ---------------------------------------------------- */
+    <div class="timeline-card">
+      <img src="images/I84A9114.jpg">
+      <h4>O início da nova vida</h4>
+      <p>Entre vinhos, risos e a sensação de missão cumprida.</p>
+    </div>
 
-.video-block {
-  max-width: 760px;
-  margin: 35px auto;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
-}
+  </div>
+</section>
 
-.video-block iframe {
-  width: 100%;
-  height: 395px;
-}
+<!-- PARA QUEM É -->
+<section class="who-section">
+  <h3>Para quem é — e para quem não é</h3>
+  <p class="sub">Honestidade salva tempo — e te leva direto ao seu sonho com clareza.</p>
 
-/* ---------------------------------------------------- */
-/* O QUE VOCÊ VAI ENCONTRAR */
-/* ---------------------------------------------------- */
+  <div class="who-grid">
 
-.content-section {
-  background-size: cover;
-  background-position: center;
-  padding: 70px 20px;
-  border-radius: 12px;
-}
+    <div class="who-card yes">
+      <h4>✔ Este guia é para você se…</h4>
+      <ul>
+        <li>Sonha com um casamento íntimo e cinematográfico na Itália.</li>
+        <li>Quer clareza e direção para não se perder nos prazos.</li>
+        <li>Busca economizar sem perder a magia.</li>
+        <li>Deseja leveza e segurança em cada etapa.</li>
+      </ul>
+    </div>
 
-.content-inner {
-  background: rgba(0,0,0,0.40);
-  padding: 40px;
-  border-radius: 12px;
-}
+    <div class="who-card no">
+      <h4>✘ Não é para você se…</h4>
+      <ul>
+        <li>Quer delegar tudo e não participar das escolhas.</li>
+        <li>Busca algo rápido e sem envolvimento emocional.</li>
+        <li>Não deseja um casamento com significado e propósito.</li>
+      </ul>
+    </div>
 
-.check-list li {
-  margin-left: 20px;
-  margin-bottom: 10px;
-  font-size: 1.08em;
-}
+  </div>
+</section>
 
-/* ---------------------------------------------------- */
-/* BONUS */
-/* ---------------------------------------------------- */
+<!-- PACOTE COMPLETO -->
+<section class="package-section">
+  <h3>Pacote completo — Da fé ao altar</h3>
+  <p class="sub">Quatro guias que se complementam e criam uma jornada cinematográfica.</p>
 
-.bonus-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-  margin-top: 35px;
-}
+  <div class="package-flex">
+    <img src="images/pacote-ebooks.png" class="package-img">
 
-.bonus-item {
-  background: rgba(255,255,255,0.08);
-  padding: 20px;
-  border-radius: 10px;
-}
+    <div class="package-info">
+      <ul>
+        <li>✔ Guia Casar na Itália — Definitivo</li>
+        <li>✔ Guia Financeiro</li>
+        <li>✔ Elopement Wedding</li>
+        <li>✔ Lua de Mel dos Sonhos</li>
+      </ul>
+      <p class="price">De R$ 268 por R$ 167,00</p>
+      <a href="https://chk.eduzz.com/8WPA3G7YWP" class="btn">Quero o pacote completo</a>
+    </div>
+  </div>
+</section>
 
-/* ---------------------------------------------------- */
-/* LINHA DO TEMPO */
-/* ---------------------------------------------------- */
+<!-- DEPOIMENTOS -->
+<section class="testimonials" style="background-image:url('images/I84A9497.jpg');">
+  <h3>Depoimentos</h3>
+  <p class="sub">Histórias reais que mostram que o sonho é possível.</p>
 
-.timeline-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-}
+  <div class="testimonials-scroll">
+    <div class="testimonial-card">“Achei que casar fora do Brasil era impossível — até conhecer o guia da Vívi.”<br><strong>— Camila R.</strong></div>
+    <div class="testimonial-card">“É como se uma amiga te mostrasse o caminho entre taças de vinho e risos.”<br><strong>— Patrícia M.</strong></div>
+    <div class="testimonial-card">“Cada capítulo parece uma cena de filme.”<br><strong>— Renata e Lucas</strong></div>
+    <div class="testimonial-card">“Clareza, emoção e direção. Foi tudo o que eu precisava.”<br><strong>— Marina S.</strong></div>
+    <div class="testimonial-card">“Imaginei nosso altar em Florença.”<br><strong>— Juliana A.</strong></div>
+    <div class="testimonial-card">“O guia tornou tudo possível para nós.”<br><strong>— Bianca L.</strong></div>
+  </div>
+</section>
 
-.timeline-card img {
-  width: 100%;
-  border-radius: 10px;
-  height: 160px;
-  object-fit: cover;
-}
+<!-- QUEM É VÍVI -->
+<section class="vivi-section">
+  <h3>Quem é Vívi Temperine</h3>
+  <p class="sub">A voz que transformou sua própria experiência em método.</p>
 
-/* ---------------------------------------------------- */
-/* PARA QUEM É */
-/* ---------------------------------------------------- */
+  <div class="vivi-flex">
 
-.who-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-}
+    <div class="vivi-text">
+      <p><strong>Vívi Temperine transformou sua própria jornada na Itália em um método leve, organizado e profundamente humano.</strong></p>
+      <p>Cada etapa trouxe aprendizados reais que ela traduz em orientação simples e cuidadosa.</p>
+      <p>Com sensibilidade, método e poesia, ela mostra que o sonho é possível — e pode ser vivido com leveza.</p>
+    </div>
 
-.who-card {
-  background: rgba(255,255,255,0.12);
-  padding: 25px;
-  border-radius: 12px;
-}
+    <div class="vivi-photos">
+      <div class="photo-big">
+        <img src="images/20190517_201752_Original.jpg">
+        <span>Celebrando a nova vida em Roma</span>
+      </div>
 
-.who-card h4 {
-  font-size: 1.2em;
-  margin-bottom: 12px;
-  color: var(--gold);
-}
+      <div class="photo-small">
+        <img src="images/IMG_20180605_193201427.jpg">
+        <span>Nos vinhedos de Assis, na Úmbria</span>
+      </div>
+    </div>
 
-/* ---------------------------------------------------- */
-/* PACOTE */
-/* ---------------------------------------------------- */
+  </div>
+</section>
 
-.package-flex {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+<!-- CENAS QUE INSPIRAM -->
+<section class="gallery-section">
+  <h3>Cenas que inspiram o seu sonho</h3>
 
-.package-img {
-  width: 320px;
-  border-radius: 12px;
-  box-shadow: 0 0 18px rgba(0,0,0,0.35);
-}
+  <div class="gallery">
+    <img src="images/italia1.jpg">
+    <img src="images/italia2.jpg">
+    <img src="images/italia3.jpg">
+    <img src="images/italia4.jpg">
+    <img src="images/italia5.jpg">
+    <img src="images/italia6.jpg">
+  </div>
+</section>
 
-/* ---------------------------------------------------- */
-/* DEPOIMENTOS — 3 COLUNAS */
-/* ---------------------------------------------------- */
+<!-- GARANTIA -->
+<section class="garantia" style="background-image:url('images/I84A9475.jpg');">
+  <h3>Garantia e Segurança</h3>
+  <p><strong>7 dias para testar — ou seu dinheiro de volta.</strong></p>
+  <p>Compra 100% segura via Eduzz.</p>
 
-.testimonials {
-  background-size: cover;
-  background-position: center;
-  padding: 70px 20px;
-  border-radius: 12px;
-}
+  <a href="https://chk.eduzz.com/7WXQ2NG49A" class="btn">Quero viver essa experiência</a>
+</section>
 
-.testimonials-scroll {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
+<!-- ENCERRAMENTO -->
+<section class="closing">
+  <p>
+    <strong>Viva o seu sonho.</strong><br>
+    Um “sim” italiano começa com um passo — e este guia te dá a direção.
+  </p>
+</section>
 
-.testimonial-card {
-  background: rgba(255,255,255,0.12);
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 1.05em;
-}
+<!-- SELOS -->
+<section class="selos">
+  <h3>Compra 100% segura</h3>
 
-/* ---------------------------------------------------- */
-/* QUEM É VÍVI */
-/* ---------------------------------------------------- */
+  <div class="selos-flex">
+    <div class="selo">✔ Pagamento protegido — Eduzz</div>
+    <div class="selo">✔ Garantia de 7 dias</div>
+    <div class="selo">✔ Checkout seguro SSL</div>
+  </div>
+</section>
 
-.vivi-flex {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  justify-content: center;
-  align-items: center;
-}
+<!-- FOOTER -->
+<footer>
+  Coleção Casar na Itália — Desenvolvido por Vívi Temperine © 2025 — Todos os direitos reservados
+</footer>
 
-.photo-big img,
-.photo-small img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+<!-- BOTÃO FLUTUANTE -->
+<a href="https://chk.eduzz.com/7WXQ2NG49A" class="floating-btn">
+  Garantir Guia
+</a>
 
-.photo-big {
-  width: 260px;
-  height: 260px;
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-}
-
-.photo-small {
-  width: 180px;
-  height: 180px;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-/* ---------------------------------------------------- */
-/* GARANTIA */
-/* ---------------------------------------------------- */
-
-.garantia {
-  background-size: cover;
-  background-position: center;
-  padding: 70px 20px;
-  text-align: center;
-  border-radius: 12px;
-}
-
-/* ---------------------------------------------------- */
-/* FOOTER */
-/* ---------------------------------------------------- */
-
-footer {
-  padding: 40px 20px;
-  text-align: center;
-  opacity: 0.9;
-}
-
-/* ---------------------------------------------------- */
-/* MOBILE */
-/* ---------------------------------------------------- */
-
-@media (max-width: 768px) {
-  .hero { height: 78vh; }
-  .feel-grid { grid-template-columns: 1fr; }
-  .bonus-grid { grid-template-columns: 1fr; }
-  .timeline-grid { grid-template-columns: 1fr; }
-  .who-grid { grid-template-columns: 1fr; }
-  .testimonials-scroll { grid-template-columns: 1fr; }
-  .package-flex { flex-direction: column; }
-}
+</body>
+</html>
