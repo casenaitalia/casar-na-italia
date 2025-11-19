@@ -617,3 +617,108 @@ footer {
   }
 
 }
+
+/* ============================= */
+/* CORREÇÕES FINAS VIVI – 22:00 */
+/* ============================= */
+
+/* HERO – subir texto e tirar botão do rosto */
+.hero {
+  height: 70vh !important;
+  background-position: center 70% !important;
+}
+
+.hero-content {
+  margin-bottom: 40px !important;
+}
+
+/* remover bolinhas */
+ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+
+/* espaçamento do botão do pacote completo */
+.package-info ul {
+  margin-bottom: 18px !important;
+}
+
+.package-info .btn {
+  margin-top: 12px !important;
+}
+
+/* correção fotos Quem é a Vivi */
+.vivi-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+}
+
+.photo-big img,
+.photo-small img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.photo-big span,
+.photo-small span {
+  margin-top: 8px;
+  display: block;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* linha do tempo horizontal */
+.timeline-grid {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 22px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.timeline-card {
+  min-width: 260px !important;
+}
+
+/* fotos da galeria */
+.gallery img {
+  height: 210px !important;
+  object-fit: cover !important;
+  border-radius: 12px;
+}
+
+/* botão flutuante */
+.floating-btn {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: #8C4A4A;
+  padding: 14px 22px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  z-index: 9999 !important;
+}
+
+/* provas sociais */
+.social-proof {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sp-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.sp-item h4 {
+  color: #FFD7A3;
+  font-size: 1.4em;
+  margin-bottom: 6px;
+}
