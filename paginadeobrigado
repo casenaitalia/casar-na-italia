@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Obrigado – Casar na Itália</title>
+  <meta name="description" content="Obrigada por adquirir o Guia Casar na Itália. Confira uma oferta exclusiva para planejar o seu elopement wedding na Itália.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="thankyou-body">
+  <!-- HERO COM SUA FOTO -->
+  <section class="thankyou-hero" role="img" aria-label="Casal celebrando elopement na Itália">
+    <div class="thankyou-hero-text">
+      <h1>Obrigada por adquirir o Guia Casar na Itália 🤍🇮🇹</h1>
+      <p>Seu acesso já está no seu e-mail.</p>
+    </div>
+  </section>
+
+  <!-- BLOCO DO UPSELL -->
+  <div class="thankyou-upsell">
+    <h2>🎁 Oferta Exclusiva Desta Página</h2>
+    <p>Aparece uma única vez. Aproveite enquanto está aqui.</p>
+
+    <h3 class="thankyou-offer-title">Guia de Elopement Wedding na Itália — <b>R$ 57</b></h3>
+
+    <div class="thankyou-benefits">
+      <p>✔ Como escolher o local perfeito</p>
+      <p>✔ Custos reais + faixas de orçamento</p>
+      <p>✔ Passo a passo para planejar sem assessora</p>
+      <p>✔ Documentos e burocracias simplificadas</p>
+      <p>✔ Roteiros e experiências inesquecíveis</p>
+      <p>✔ Inspirações e estrutura completa do dia</p>
+    </div>
+
+    <a href="https://chk.eduzz.com/7977G6JV9E" class="thankyou-cta">SIM! Quero o Guia de Elopement Wedding por R$ 57</a>
+  </div>
+
+  <div class="thankyou-footer">
+    Se preferir continuar sem esta oferta, seu guia já está no seu e-mail.<br><br>
+    Com carinho,<br>
+    <b>Vívi Temperine</b>
+  </div>
+</body>
+</html>
