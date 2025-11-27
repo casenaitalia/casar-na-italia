@@ -3,81 +3,139 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Boleto Gerado – Casar na Itália</title>
+<title>Página de Obrigado – Casar na Itália</title>
 
 <style>
   body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #faf8f5;
     color: #444;
-    padding: 40px 20px;
   }
 
-  .container {
-    max-width: 700px;
-    margin: auto;
+  /* HERO */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('images/foto-elopement.jpg'); /* ALTERAR AQUI */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Overlay dourado suave */
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(200, 180, 150, 0.2);
+    backdrop-filter: brightness(0.9);
+  }
+
+  /* Texto no hero */
+  .hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.4);
+  }
+
+  .hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+  }
+
+  /* Bloco do upsell */
+  .upsell {
+    max-width: 750px;
+    margin: -60px auto 0; 
     background: #fff;
     padding: 35px;
     border-radius: 12px;
-    box-shadow: 0 6px 25px rgba(0,0,0,0.07);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    position: relative;
   }
 
-  h1 {
-    font-size: 30px;
-    text-align: center;
+  .upsell h2 {
+    font-size: 28px;
     color: #333;
+    margin-bottom: 10px;
   }
 
-  p {
+  .upsell p {
     font-size: 18px;
-    line-height: 1.7;
     color: #666;
+    line-height: 1.7;
   }
 
+  .cta {
+    display: inline-block;
+    margin-top: 18px;
+    background: #8b5e3c;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 6px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  .cta:hover {
+    background: #744d32;
+  }
+
+  /* Rodapé */
   .footer {
-    margin-top: 30px;
     text-align: center;
+    margin-top: 30px;
     font-size: 16px;
     color: #777;
+    padding-bottom: 50px;
   }
 </style>
 
 </head>
+
 <body>
 
-<div class="container">
-  <h1>Seu boleto foi gerado com sucesso 🤍🇮🇹</h1>
-
-  <p>Agora é só realizar o pagamento para liberar o acesso ao <strong>Guia Casar na Itália</strong>.</p>
-
-  <p>Assim que o sistema confirmar o pagamento (entre 10 minutos e 48 horas), você receberá automaticamente por e-mail:</p>
-
-  <p>
-    ✔ O link para download do guia<br>
-    ✔ A página de acesso<br>
-    ✔ Seus bônus exclusivos
-  </p>
-
-  <h2 style="font-size:22px; margin-top:30px;">Orientações importantes</h2>
-  <p>
-    ✔ Pague pelo aplicativo do seu banco<br>
-    ✔ Verifique valor e vencimento antes de confirmar<br>
-    ✔ Após o pagamento, o acesso é liberado automaticamente<br>
-    ✔ Fique de olho no e-mail (e no spam)
-  </p>
-
-  <h2 style="font-size:22px; margin-top:30px;">Precisa de ajuda?</h2>
-  <p>
-    Estou aqui para ajudar. Envie sua mensagem para:<br><br>
-    📩 <strong>contato@casarnaitalia.com</strong>
-  </p>
-
-  <div class="footer">
-    Com carinho,<br>
-    <strong>Vívi Temperine</strong><br>
-    Casar na Itália 🤍🇮🇹
+<!-- HERO COM SUA FOTO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Obrigada por adquirir o Guia Casar na Itália 🤍🇮🇹</h1>
+    <p>Seu acesso já está no seu e-mail.</p>
   </div>
+</section>
+
+<!-- BLOCO DO UPSELL -->
+<div class="upsell">
+  <h2>🎁 Oferta Exclusiva Desta Página</h2>
+  <p>Aparece uma única vez. Aproveite enquanto está aqui.</p>
+
+  <h3 style="font-size:24px; margin-top:25px;">Guia de Elopement Wedding na Itália — <b>R$ 57</b></h3>
+
+  <p>
+    ✔ Como escolher o local perfeito<br>
+    ✔ Custos reais + faixas de orçamento<br>
+    ✔ Passo a passo para planejar sem assessora<br>
+    ✔ Documentos e burocracias simplificadas<br>
+    ✔ Roteiros e experiências inesquecíveis<br>
+    ✔ Inspirações e estrutura completa do dia<br>
+  </p>
+
+  <a href="LINK_DO_UPSELL_AQUI" class="cta">SIM! Quero o Guia de Elopement Wedding por R$ 57</a>
+</div>
+
+<div class="footer">
+  Se preferir continuar sem esta oferta, seu guia já está no seu e-mail.<br><br>
+  Com carinho,<br>
+  <b>Vívi Temperine</b>
 </div>
 
 </body>
