@@ -1,113 +1,166 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obrigado! – Boleto Gerado</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Obrigada pelo pedido! – Casar na Itália</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontes -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
     <style>
         body {
+            font-family: 'Poppins', sans-serif;
+            background: #faf8f6;
             margin: 0;
             padding: 0;
-            background: #f7f5f2;
-            font-family: 'Poppins', sans-serif;
-            color: #3c3c3c;
         }
-        .container {
-            max-width: 780px;
-            margin: 0 auto;
-            padding: 40px 20px;
+
+        /* HEADER */
+        .header-social {
             text-align: center;
+            padding: 18px 0 5px;
         }
-        .hero-img {
+
+        .header-social img.logo {
+            width: 190px;
+            margin-bottom: 10px;
+        }
+
+        .social-links {
+            margin-top: 8px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #d14c74;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* IMAGEM */
+        .hero-image {
             width: 100%;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            object-fit: cover;
+            max-width: 900px;
+            margin: 25px auto 30px;
+            overflow: hidden;
+            border-radius: 18px;
         }
+
+        .hero-image img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        /* TÍTULO */
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 34px;
+            font-size: 2.4rem;
+            text-align: center;
+            color: #1a1a1a;
             margin-bottom: 10px;
-            color: #2e2e2e;
         }
+
         p {
-            font-size: 18px;
+            text-align: center;
+            font-size: 1.15rem;
+            color: #444;
             line-height: 1.6;
-            margin-bottom: 20px;
+            max-width: 760px;
+            margin: 0 auto 30px;
         }
-        .box {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            margin: 30px 0;
-            text-align: left;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+
+        /* BLOCO */
+        section {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 35px 28px;
+            border-radius: 20px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
         }
-        .cta-btn {
-            display: inline-block;
-            background: #b48b63;
-            color: white;
-            padding: 16px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 17px;
-            margin-top: 20px;
-            transition: 0.2s;
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #1a1a1a;
         }
-        .cta-btn:hover {
-            background: #98724f;
+
+        ul {
+            padding-left: 20px;
+            font-size: 1.1rem;
+            line-height: 1.7;
         }
-        .small {
-            font-size: 15px;
-            opacity: 0.8;
+
+        /* RODAPÉ */
+        .footer {
+            text-align: center;
+            margin: 40px 0 25px;
+            color: #777;
+            font-size: 1rem;
+        }
+
+        .instagram-link {
+            color: #d14c74;
+            font-weight: 600;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <!-- SOCIAL + LOGO -->
+    <div class="header-social">
+        <img src="images/logo-casar-na-italia.png" alt="Casar na Itália" class="logo">
 
-        <!-- FOTO DA PÁGINA -->
-        <img src="images/I84A9482_optimized.jpg" alt="Casamento na Itália" class="hero-img">
-
-        <h1>Seu boleto foi gerado com sucesso! 🇮🇹</h1>
-        <p>
-            Obrigada por confiar no <strong>Guia Casar na Itália</strong>.  
-            Assim que o pagamento for compensado pelo banco, seu acesso será liberado automaticamente por e-mail.
-        </p>
-
-        <div class="box">
-            <h2 style="font-family: 'Playfair Display', serif; margin-top:0;">📌 Como garantir o acesso ao guia</h2>
-            <p>✔ Pague o boleto dentro do prazo de vencimento</p>
-            <p>✔ O banco pode levar até 24h para confirmar o pagamento</p>
-            <p>✔ Assim que o pagamento for aprovado, você receberá tudo automaticamente</p>
-            <p>✔ Se não encontrar o e-mail, verifique o spam ou aba “Promoções”</p>
+        <div class="social-links">
+            <a href="https://instagram.com/naitaliaeucaso" target="_blank">Instagram</a>
+            <a href="https://br.pinterest.com/casarnaitaliaguia" target="_blank">Pinterest</a>
         </div>
-
-        <div class="box">
-            <h2 style="font-family: 'Playfair Display', serif; margin-top:0;">💛 Enquanto isso…</h2>
-            <p>
-                Continue se inspirando para planejar um casamento inesquecível na Itália.
-            </p>
-
-            <a class="cta-btn" href="https://www.pinterest.com/" target="_blank">Salvar inspirações no Pinterest</a>
-            <br><br>
-
-            <a class="cta-btn" href="https://instagram.com/naitaliaeucaso" target="_blank" 
-               style="background:#2e2e2e;">Seguir no Instagram</a>
-        </div>
-
-        <p class="small">
-            Qualquer dúvida, envie uma mensagem para  
-            <br><strong>contato@casarnaitalia.com</strong>
-        </p>
-
     </div>
+
+    <!-- FOTO -->
+    <div class="hero-image">
+        <img src="images/I84A9482.jpg" alt="Casamento na Itália">
+    </div>
+
+    <!-- TÍTULO -->
+    <h1>Seu boleto foi gerado com sucesso! 🎉</h1>
+
+    <!-- INTRO -->
+    <p>
+        Obrigada por confiar no <strong>Guia Casar na Itália</strong>.  
+        Assim que o pagamento for compensado pelo banco, seu acesso será liberado automaticamente por e-mail.
+    </p>
+
+    <!-- BLOCO DE INSTRUÇÕES -->
+    <section>
+        <h2>📌 Como garantir o acesso ao guia</h2>
+
+        <ul>
+            <li>Você receberá seu acesso automático no e-mail assim que o banco confirmar o pagamento.</li>
+            <li>Se não encontrar, cheque spam e caixa de promoções.</li>
+            <li>O e-mail chegará com o assunto: <strong>Seu acesso ao Guia Casar na Itália</strong>.</li>
+            <li>Qualquer dúvida, pode me chamar no Instagram oficial.</li>
+        </ul>
+    </section>
+
+    <!-- RODAPÉ -->
+    <p class="footer">
+        Siga no Instagram:  
+        <a class="instagram-link" href="https://instagram.com/naitaliaeucaso" target="_blank">@naitaliaeucaso</a>
+    </p>
 
 </body>
 </html>
