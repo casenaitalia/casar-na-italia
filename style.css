@@ -1499,4 +1499,67 @@ footer {
   display: block;
   border-radius: 16px;
 }
+/* AJUSTES DA SESSÃO O QUE VOCÊ VAI ENCONTRAR */
+
+.content-section {
+  padding: 110px 20px;
+  background-image: url('images/I84A9497.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.content-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.38); /* overlay menos pesado */
+}
+
+.content-inner {
+  position: relative;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.content-grid {
+  margin-top: 30px;
+}
+
+.content-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 14px;
+  padding: 34px 28px;
+  backdrop-filter: blur(4px);
+}
+
+.content-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.check-icon {
+  margin-right: 8px;
+  color: var(--gold);
+  font-weight: 900;
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    background-attachment: scroll;
+    background-position: center 20%;
+  }
+  
+  .content-card {
+    padding: 28px 20px;
+  }
+  
+  .content-header h3 {
+    font-size: 1.9rem;
+  }
+}
+
 
