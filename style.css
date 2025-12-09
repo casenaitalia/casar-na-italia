@@ -532,3 +532,34 @@ footer {
   padding: 18px;
   margin-top: 50px;
 }
+.photo-small {
+  display: none !important;
+}
+
+.package-img {
+  max-width: 320px !important;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 900px) {
+  .package-img {
+    max-width: 360px !important;
+  }
+}
+
+.garantia-selo img {
+  max-width: 180px !important;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 900px) {
+  .garantia-selo img {
+    max-width: 220px !important;
+  }
+}
+
