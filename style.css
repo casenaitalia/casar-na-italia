@@ -695,6 +695,19 @@ ul li {
 ul li::before {
     content: "" !important; /* remove qualquer marcador nativo */
 }
+/* Aumentar título do pacote completo */
+.package-section h3 {
+    font-size: 32px !important;
+    font-weight: 600 !important;
+    color: #C8A474 !important;
+    text-align: center !important;
+}
+/* Reduzir espaço antes da seção do pacote */
+.package-section {
+    margin-top: -20px !important; /* Aproxima o bloco superior */
+    padding-top: 20px !important; /* Mantém a elegância */
+}
+
 
 
 
