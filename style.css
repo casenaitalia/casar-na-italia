@@ -646,5 +646,55 @@ footer {
 .testimonials + .testimonials {
     margin-top: 60px !important;
 }
+/* Remove bolinhas dos bônus */
+.bonus-list,
+.package-bonus-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+.bonus-list li::marker,
+.package-bonus-list li::marker {
+    display: none !important;
+}
+/* Títulos dourados editoriais */
+h3, 
+.package-section h3,
+.content-section h3 {
+    color: #C8A474 !important;
+}
+/* Espaçamento entre seções */
+section {
+    margin-bottom: 60px !important;
+}
+
+/* Centralizar o CTA principal da hero */
+.hero .hero-btn {
+    display: inline-block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+.package-section h3 {
+    color: #C8A474 !important;
+}
+/* Remove bolinhas de TODOS os UL da página */
+ul {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+/* Garante que os ícones ✓ continuem aparecendo */
+ul li {
+    position: relative !important;
+    padding-left: 0 !important;
+}
+
+ul li::before {
+    content: "" !important; /* remove qualquer marcador nativo */
+}
+
 
 
