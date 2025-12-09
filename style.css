@@ -1561,5 +1561,133 @@ footer {
     font-size: 1.9rem;
   }
 }
+/* --- AJUSTES REFINADOS DO BLOCO QUEM É A VÍVI --- */
+
+.vivi-section {
+  padding: 90px 20px;
+}
+
+.vivi-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.vivi-photos {
+  flex: 0 0 340px;
+  max-width: 340px;
+}
+
+.photo-big img {
+  border-radius: 12px;
+}
+
+.photo-small img {
+  border-radius: 12px;
+}
+
+/* Desktop refinado */
+@media (min-width: 900px) {
+  .vivi-flex {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .vivi-text {
+    font-size: 1.15rem;
+    line-height: 1.75;
+  }
+
+  .photo-big {
+    max-width: 280px;
+  }
+
+  .photo-small {
+    max-width: 220px;
+    margin-left: auto;
+  }
+}
+/* --- FUNDOS SÓLIDOS PARA AS SESSÕES PEDIDAS --- */
+
+.truths-section { 
+  background: #F7F4F1 !important;
+  color: #35171C;
+}
+
+.truths-section::before {
+  display: none !important;
+}
+
+/* Mais relatos de quem viveu de perto — agora com imagem nova */
+.testimonials {
+  background: url('images/I84A9114.jpg') center/cover no-repeat !important;
+}
+
+.testimonials::before {
+  background: rgba(0,0,0,0.45) !important;
+}
+
+/* Garantia — trocar fundo e deixar mais legível */
+.garantia {
+  background: url('images/I84A9482.jpg') center/cover no-repeat !important;
+}
+
+.garantia::before {
+  background: rgba(0,0,0,0.38) !important;
+}
+
+/* --- MELHORIA DE LEITURA --- */
+.content-card,
+.testimonial-card {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Texto nos depoimentos */
+.testimonial-card {
+  color: #fff;
+  background: rgba(0,0,0,0.55);
+}
+
+/* --- Carrossel destravado --- */
+.testimonials-scroll {
+  overflow-x: auto !important;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonials-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.testimonials-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.35);
+  border-radius: 10px;
+}
+/* --- FUNDO SÓLIDO PARA O QUE NINGUÉM CONTA --- */
+.truths-section { 
+  background: #F7F4F1 !important;
+  color: #35171C;
+  padding: 90px 20px;
+}
+
+.truths-section::before {
+  display: none !important;
+}
+
+.truths-inner h3 {
+  color: #35171C;
+}
+
+.truths-list li {
+  color: #35171C;
+}
+
+.truths-icon {
+  color: var(--gold);
+}
+
 
 
