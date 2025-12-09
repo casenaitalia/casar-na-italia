@@ -562,4 +562,89 @@ footer {
     max-width: 220px !important;
   }
 }
+/* ----------------------------------------------------------- */
+/* 1) Botão da HERO mais estreito (menos largo no desktop)     */
+/* ----------------------------------------------------------- */
+.hero-btn {
+    max-width: 420px;
+    width: 100%;
+    padding: 14px 20px !important;
+}
+
+
+/* ----------------------------------------------------------- */
+/* 2) Título dourado na seção O QUE VOCÊ VAI ENCONTRAR         */
+/* ----------------------------------------------------------- */
+.content-header h3 {
+    color: #CFA671 !important; /* dourado */
+}
+
+
+/* ----------------------------------------------------------- */
+/* 3) Remover bolinhas antes dos ✔ nos BÔNUS                   */
+/* ----------------------------------------------------------- */
+.bonus-list li::before,
+.package-bonus-list li::before {
+    display: none !important;
+}
+
+
+/* ----------------------------------------------------------- */
+/* 4) Subtítulo da seção QUEM É A VÍVI mais bonito             */
+/* ----------------------------------------------------------- */
+.vivi-section .sub {
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 30px !important;
+}
+
+
+/* ----------------------------------------------------------- */
+/* 5) Remover os bullets soltos antes dos ✔ no pacote completo */
+/* ----------------------------------------------------------- */
+.package-info li {
+    list-style: none !important;
+}
+
+.package-info ul {
+    padding-left: 0 !important;
+}
+
+
+/* ----------------------------------------------------------- */
+/* 6) Fundo "mesa.jpg" com filtro rosé na seção de depoimento   */
+/*    da Vanessa                                                */
+/* ----------------------------------------------------------- */
+.social-proof {
+    background: url('images/mesa.jpg') center/cover no-repeat !important;
+    position: relative;
+}
+
+.social-proof::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(140, 74, 74, 0.20); /* rosé suave */
+    z-index: 1;
+}
+
+.social-proof > * {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* ----------------------------------------------------------- */
+/* 7) Respiro entre os dois blocos de depoimentos               */
+/* ----------------------------------------------------------- */
+.testimonials {
+    margin-top: 40px !important;
+}
+
+/* deposição longa (Juliana) separada visualmente */
+.testimonials + .testimonials {
+    margin-top: 60px !important;
+}
+
 
