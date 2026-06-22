@@ -1,166 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Obrigada pelo pedido! – Casar na Itália</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: #faf8f6;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* HEADER */
-        .header-social {
-            text-align: center;
-            padding: 18px 0 5px;
-        }
-
-        .header-social img.logo {
-            width: 190px;
-            margin-bottom: 10px;
-        }
-
-        .social-links {
-            margin-top: 8px;
-        }
-
-        .social-links a {
-            margin: 0 10px;
-            color: #d14c74;
-            font-weight: 500;
-            font-size: 1rem;
-        }
-
-        .social-links a:hover {
-            text-decoration: underline;
-        }
-
-        /* IMAGEM */
-        .hero-image {
-            width: 100%;
-            max-width: 900px;
-            margin: 25px auto 30px;
-            overflow: hidden;
-            border-radius: 18px;
-        }
-
-        .hero-image img {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-            object-position: center;
-            display: block;
-        }
-
-        /* TÍTULO */
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.4rem;
-            text-align: center;
-            color: #1a1a1a;
-            margin-bottom: 10px;
-        }
-
-        p {
-            text-align: center;
-            font-size: 1.15rem;
-            color: #444;
-            line-height: 1.6;
-            max-width: 760px;
-            margin: 0 auto 30px;
-        }
-
-        /* BLOCO */
-        section {
-            max-width: 850px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 35px 28px;
-            border-radius: 20px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: #1a1a1a;
-        }
-
-        ul {
-            padding-left: 20px;
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
-
-        /* RODAPÉ */
-        .footer {
-            text-align: center;
-            margin: 40px 0 25px;
-            color: #777;
-            font-size: 1rem;
-        }
-
-        .instagram-link {
-            color: #d14c74;
-            font-weight: 600;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página de Obrigado (Boleto) – Casar na Itália</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #444;
+  }
+  /* HERO */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-image: url('images/I84A9721.jpg'); /* ALTERAR AQUI */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(200, 180, 150, 0.2);
+    backdrop-filter: brightness(0.9);
+  }
+  .hero-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.4);
+    padding: 0 20px;
+  }
+  .hero-text h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  .hero-text p {
+    font-size: 20px;
+  }
+  .upsell {
+    max-width: 750px;
+    margin: -60px auto 0;
+    background: #fff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    position: relative;
+  }
+  .upsell h2 {
+    font-size: 26px;
+    color: #3A4A2E;
+    margin-bottom: 10px;
+  }
+  .upsell h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 6px;
+  }
+  .upsell p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.7;
+  }
+  .preco {
+    font-size: 20px;
+    color: #333;
+    margin-top: 18px;
+  }
+  .preco s { color: #b00; }
+  .preco b { color: #3A4A2E; font-size: 24px; }
+  .cta {
+    display: inline-block;
+    margin-top: 18px;
+    background: #C2A45A;
+    color: #fff;
+    padding: 16px 32px;
+    border-radius: 6px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  .cta:hover {
+    background: #a98e45;
+  }
+  .nota-vaga {
+    font-size: 15px;
+    color: #999;
+    margin-top: 12px;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #777;
+    padding-bottom: 50px;
+  }
+</style>
 </head>
-
 <body>
+<!-- HERO COM SUA FOTO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Seu boleto foi gerado! 🇮🇹</h1>
+    <p>Assim que o pagamento for compensado, seu acesso ao Método chega no seu e-mail.</p>
+  </div>
+</section>
+<!-- BLOCO DA MENTORIA -->
+<div class="upsell">
+  <h2>A diretriz do seu casamento na Itália já começou.</h2>
+  <p>
+    Confirme o pagamento do boleto para liberar seu acesso. Em seguida, todas as instruções
+    do Método chegam no seu e-mail. 💌
+  </p>
 
-    <!-- SOCIAL + LOGO -->
-    <div class="header-social">
-        <img src="images/logo-casar-na-italia.png" alt="Casar na Itália" class="logo">
+  <h3>Quer aprofundar ainda mais esse processo?</h3>
+  <p>
+    Entre na <b>Mentoria Diretrice Itália</b>. São 8 semanas para você definir tudo e
+    realizar o casamento dos sonhos — sem fantasia e sem prejuízo. Aprenda a ler contratos,
+    tenha em mãos uma calculadora de orçamento e, o melhor, a minha direção ao seu lado.
+  </p>
 
-        <div class="social-links">
-            <a href="https://instagram.com/naitaliaeucaso" target="_blank">Instagram</a>
-            <a href="https://br.pinterest.com/casarnaitaliaguia" target="_blank">Pinterest</a>
-        </div>
-    </div>
+  <p class="preco">Turma fundadora: de <s>R$1.997</s> por apenas <b>R$497</b></p>
 
-    <!-- FOTO -->
-    <div class="hero-image">
-        <img src="images/I84A9482.jpg" alt="Casamento na Itália">
-    </div>
-
-    <!-- TÍTULO -->
-    <h1>Seu boleto foi gerado com sucesso! 🎉</h1>
-
-    <!-- INTRO -->
-    <p>
-        Obrigada por confiar no <strong>Métoddo Casar na Itália</strong>.  
-        Assim que o pagamento for compensado pelo banco, seu acesso será liberado automaticamente por e-mail.
-    </p>
-
-    <!-- BLOCO DE INSTRUÇÕES -->
-    <section>
-        <h2>📌 Como garantir o acesso ao Método</h2>
-
-        <ul>
-            <li>Você receberá seu acesso automático no e-mail assim que o banco confirmar o pagamento.</li>
-            <li>Se não encontrar, cheque spam e caixa de promoções.</li>
-            <li>O e-mail chegará com o assunto: <strong>Seu acesso ao Método Casar na Itália</strong>.</li>
-            <li>Qualquer dúvida, pode me chamar no Instagram oficial ou email: casenaitalia@gmail.com</li>
-        </ul>
-    </section>
-
-    <!-- RODAPÉ -->
-    <p class="footer">
-        Siga no Instagram:  
-        <a class="instagram-link" href="https://instagram.com/naitaliaeucaso" target="_blank">@naitaliaeucaso</a>
-    </p>
-
+  <a href="https://form.respondi.app/vjxt5RDF" class="cta">Quero me candidatar à Mentoria</a>
+  <p class="nota-vaga">Vagas por aplicação · grupos de até 10 noivas.</p>
+</div>
+<div class="footer">
+  Com carinho,<br>
+  <b>Vívi Temperine</b><br>
+  Founder · Diretrice Itália
+</div>
 </body>
 </html>
